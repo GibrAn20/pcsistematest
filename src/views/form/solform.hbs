@@ -1,0 +1,87 @@
+<div class="text-center">
+    <h4 class="display-6" id="form-title">Formulario de solicitud</h4>
+</div>
+
+
+<form action="/reqform" enctype="multipart/form-data" method="post" style="text-align: center; width: 50rem; margin-left: 10cm;">
+    <div class="row">
+
+
+        <div class="col form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="floatingInput" name="contacto_empresa"
+                placeholder="name@example.com">
+            <label for="floatingInput" style="margin-left: .1cm;">Nombre del contacto de la empresa</label>
+        </div>
+
+        <div class="col form-floating mb-3 mt-3">
+            <input type="text" class="form-control" name="nombre_empresa" placeholder="name@example.com">
+            <label for="floatingInput" style="margin-left: .1cm;">Nombre de la empresa</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="file" class="form-control mt-2" name="encuesta_empresa" placeholder="name@example.com">
+            <label for="floatingInput" style="margin-left: .1cm;">Encuesta de la empresa</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="nombre_alumno" placeholder="name@example.com" value="">
+            <label for="floatingInput" style="margin-left: .1cm;">Nombre del alumno</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="tel" class="form-control" name="matricula_alumno" placeholder="name@example.com" value="">
+            <label for="floatingInput" style="margin-left: .1cm;">Matrícula</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <select class="form-select" id="floatingSelect" name="carrera_alumno" aria-label="Floating label select example">
+                <option selected>---</option>
+                <option value="1">Tecnologías de la información</option>
+                <option value="2">Mecatronica</option>
+                <option value="3">Procesos industriales</option>
+                <option value="4">Operaciones comerciales</option>
+                <option value="5">Energias Renovables</option>
+                <option value="6">Desarrollo de negocios</option>
+                <option value="7">Manufactura Aeronautica</option>
+                <option value="8">Mantenimiento Industrial</option>
+            </select>
+            <label for="floatingSelect">Carrera</label>
+        </div>
+
+        <div class="col form-floating mb-3">
+            <input type="text" class="form-control mt-2" name="numero_imss_alumno" placeholder="name@example.com">
+            <label for="floatingInput" style="margin-left: .1cm;">Numero de seguro social (IMSS)</label>
+        </div>
+
+        <div class="col form-floating mb-3">
+            <input type="file" class="form-control mt-2" name="constancia_imss" placeholder="name@example.com">
+            <label for="floatingInput" style="margin-left: .1cm;">Constancia de vigencia de IMSS</label>
+        </div>
+
+        <p class="text-start"><strong>Información de contacto</strong></p>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" name="correo_alumno" placeholder="name@example.com">
+            <label for="floatingInput" style="margin-left: .1cm;">Correo del alumno</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="tel" class="form-control" name="telefono_alumno" placeholder="name@example.com">
+            <label for="floatingInput" style="margin-left: .1cm;">Teléfono</label>
+        </div>
+
+        <div class="text-start">
+            <input type="checkbox" id="confirmationtext" name="confirmationtext" class="form-check-input"><small class="form-text text-muted "
+                style="font-weight: bold;">
+                He verificado los datos introducidos y puedo confirmar que todo es correcto.
+            </small>
+
+            
+
+        </div>
+        <input type="submit" id="submitbtn" name="submit"  value="Enviar datos"  class="btn btn-success btn-lg mt-3">
+
+
+    </div>
+
+</form>

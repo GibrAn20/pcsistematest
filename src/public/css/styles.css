@@ -1,0 +1,25 @@
+
+body {
+    background-color: rgb(rgba(255, 255, 255, 0.656));
+    margin: 0 0 20px;
+
+}
+
+a, a label{
+    cursor: pointer;
+}
+
+#pendcheck{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2cm;
+}
+
+#revcheck{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2cm;
+}
+
+
+

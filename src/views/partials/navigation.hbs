@@ -1,0 +1,58 @@
+<!--{{#if user.admin}}
+<nav id="navbar" class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home"><img src="/images/UTN_text-r.png" height="50">Inicio</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/pendiente">Solicitudes pendientes <img src="/icons/document_pend_icon.ico"
+              height="30" width="30"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/revisado">Solicitudes revisadas <img src="/icons/document_check_icon.ico"
+              height="25" width="25"></a>
+        </li>
+
+      </ul>
+      <div class="dropdown-center" style="margin-right: 3cm;">
+        <a class="" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user-gear"
+            style="color: rgba(0, 0, 0, 0.697); font-size: 2rem;"></i></a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+          <li><a class="dropdown-item" href="/settings" style="text-decoration: none;"><i class="fa-solid fa-gear"></i>
+              Configuración</a></li>
+          <li><a class="dropdown-item" href="#" style="text-decoration: none;"><i class="fa-solid fa-user-plus"></i>
+              Agregar admin</a></li>
+          <li><a class="dropdown-item" href="#" style="text-decoration: none;"><i
+                class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</nav>
+{{else}}
+-->
+
+<nav id="navbar" class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home"><img src="/images/UTN_text-r.png" height="50">Inicio</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/pendiente">Pendiente <i class="fa-regular fa-hourglass"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/revisado">Revisado <i class="fa-solid fa-check"></i></a>
+        </li>
+
+      </ul>
+      <div class="text-end">
+        <li class="nav-link" style="">
+          <a href="/login" style="text-decoration: none;"><i class="fa-regular fa-user"></i> Iniciar Sesión (admin)</a>
+        </li>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+  {{/if}}
